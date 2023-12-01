@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section>
+        <div class="img">
+            <img src="img/image 24.png" alt="">
+        </div>
+
+        <div class="p">
+            <h1>Get in <span>Touch</span></h1>
+
+            <form action="" id="myForm">
+                <input type="text" name="" id="input" placeholder="Name" class="input">
+            <input type="email name=" id="input" placeholder="Email" class="input">
+            <input type="number" name="" id="input" placeholder="Phone Number" class="input">
+            </form>
+
+            <button class="btn" type="submit" onclick="myFunction()">Send</button>
+        </div>
+
+    </section>
+
+    <script>
+       function myFunction() {
+        Swal.fire({
+  title: "Congratulations!",
+  text: "With the number you provided, we can easily contact you 🤗",
+  icon: "success"
+});
+    document.getElementById("myForm").reset();
+}
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
